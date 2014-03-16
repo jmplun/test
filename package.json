@@ -7,6 +7,11 @@
   },
   "dependencies": {
     "express": "*",
-    "jade": "*"
+    "jade": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "static-favicon": "*",
+    "express-session": "*",
+    "errorhandler": "*"
   }
 }
