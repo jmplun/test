@@ -19,7 +19,7 @@ var app = express();
 var router = express.Router();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(favicon());
@@ -44,9 +44,7 @@ if ('development' == env) {
    app.locals.pretty = true;
 }
 
-
-
-app.listen(3000);
+app.listen();
 //http.createServer(app).listen(app.get('port'), function(){
-//  console.log('My Express server listening on port ' + app.get('port'));
+  console.log('My Express server listening on port ' + app.get('port'));
 //});
