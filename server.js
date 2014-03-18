@@ -42,9 +42,13 @@ if ('development' == env) {
    // configure stuff here
    app.use(errorHandler());
    app.locals.pretty = true;
+   app.set('port', process.env.PORT || 3000);
+}
+else {
+  app.set('port', 80);
 }
 
-app.listen(8080);
+app.listen(app.get('port'));
 //http.createServer(app).listen(app.get('port'), function(){
   console.log('My Express server listening on port ' + app.get('port'));
 //});
