@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Face Finder2' });
+  res.render('index', { title: 'Face Finder' });
 };
